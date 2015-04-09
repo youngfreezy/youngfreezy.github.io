@@ -13,6 +13,10 @@
   padding-right: 5%;
 }
 
+.work-entry{
+  padding-bottom: 20px;
+}
+
 h1 {
   font-size: 40px;
   color: #F5A623;
@@ -63,6 +67,7 @@ h2, h3, h4, h5 {
   color: #999999;
   line-height: 16px;
   float: right;
+  padding-bottom: 50px;
 
 }
 
@@ -205,6 +210,10 @@ span {
   height: 100%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.schools{
+  padding-top: 20px;
 }
 
 .indent{

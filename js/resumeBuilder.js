@@ -93,7 +93,7 @@ var education = {
      $("#education").append(formattedTitle + schoolInfo);
 
      var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
-     var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url);
+     var formattedURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
 
       $("#education").append(formattedDates);
        $("#education").append(formattedURL);
@@ -226,17 +226,20 @@ var projects = {
         "title": "Google Maps Twitter Search in Javascript",
         "dates": 2015,
         "description": "Used Twitter/Google Maps APIs to let users search tweets and have them displayed on the Map.",
-        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/jstwitterresized.jpg']
+        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/jstwitterresized.jpg'],
+        "link": 'https://googlemapsproject.herokuapp.com/'
     }, {
         "title": "Google Maps Twitter Search in Ruby on Rails",
         "dates": 2015,
         "description": "Used Twitter/Google Maps APIs to let users search tweets and have them displayed on the Map.",
-        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/rubytwitter.png']
+        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/rubytwitter.png'],
+        "link": 'https://ruby-twitter-search.herokuapp.com/'
     }, {
         "title": "MEAN stack CRM application",
         "dates": 2015,
         "description": "Used MongoDB, Express.js, Node.js, and Angular to create a mock CRM app.",
-        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/crm.png']
+        "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/crm.png'],
+        "link": 'fareezuser-crm.herokuapp.com'
     }]
 
     //add some more in
@@ -245,7 +248,7 @@ projects.display= function (){
 	for(project in projects.projects){
 		$("#projects").append(HTMLprojectStart);
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title).replace("#", projects.projects[project].link);
 		$(".project-entry:last").append(formattedTitle);
 
 		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
@@ -253,6 +256,8 @@ projects.display= function (){
 
 		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
 		$(".project-entry:last").append(formattedDescription);
+
+
 
 		if (projects.projects[project].images.length>0){
 
