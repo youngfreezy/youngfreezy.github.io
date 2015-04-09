@@ -239,7 +239,7 @@ var projects = {
         "dates": 2015,
         "description": "Used MongoDB, Express.js, Node.js, and Angular to create a mock CRM app.",
         "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/crm.png'],
-        "link": 'fareezuser-crm.herokuapp.com'
+        "link": 'https://fareezuser-crm.herokuapp.com'
     }]
 
     //add some more in
