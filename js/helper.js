@@ -60,7 +60,9 @@ function initializeMap() {
     disableDefaultUI: false,
      zoomControl: true,
     scaleControl: false,
-    panControl: true
+    panControl: true,
+    maxZoom: 8,
+    minZoom: 2
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
