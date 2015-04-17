@@ -111,15 +111,15 @@ var work = {
     }, {
         "employer": "SEAF",
         "title": "Project Manager",
-        "location": "Washington, D.C.",
+        "location": "Washington, D.C. and Dhaka, Bangladesh",
         "dates": "October 2012-2013",
-        "description": "Responsible for regulatory (SEC) Compliance for a global portfolio of appx $450 million and Project Manager for SEAF Bangladesh Agriventures, a SME(Small and Medium Enterprise) venture capital fund."
+        "description": "Responsible for regulatory (SEC) Compliance for a global portfolio of appx $450 million and Project Manager for SEAF Bangladesh Agriventures, a SME (Small and Medium Enterprise) venture capital fund."
     }, {
         "employer": "US Federal Government",
         "title": "Presidential Management Fellow",
         "location": "Washington, D.C.",
         "dates": "July 2009- October 2012",
-        "description": "Rotational Management Development program, where I served in three positions: Economist at US Department of Agriculture, Desk Officer in the Foreign Service, and Auditor at the EPA 's Inspector General."
+        "description": "Rotational Management Development program, where I served in three positions: Economist at US Department of Agriculture, Desk Officer in the Foreign Service, and Auditor at the EPA's Inspector General."
     }],
 
     display: function() {
@@ -155,8 +155,8 @@ var bio = {
         "twitter": "@FareezAhmed",
         "location": "Washington DC"
     },
-    "welcomeMessage": "Ready to be a Full-Stack Javascript Ninja!",
-    "skills": ["➢Node.js", "➢Functional Programming", "➢MongoDB", "➢Express.js", "➢Angular.js", "➢Web Development", "➢RESTful APIs", "➢Python", "➢Ruby on Rails", "➢Test Driven Development", "➢Data Structures", "➢Algorithms"],
+    "welcomeMessage": "Full-Stack Javascript, Python/Django, and Ruby on Rails.",
+    "skills": ["➢Node.js", "➢Functional Programming", "➢MongoDB", "➢Express.js", "➢Angular.js", "➢Web Development", "➢RESTful APIs", "➢Python", '➢Django', "➢Ruby on Rails", "➢Test Driven Development", "➢Data Structures", "➢Algorithms"],
 
     "bioPic": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/2/005/069/30b/22a97f8.jpg",
     display: function() {
@@ -217,7 +217,7 @@ var projects = {
     "projects": [{
         "title": "Google Maps Twitter Search in Javascript",
         "dates": 2015,
-        "description": "Used Twitter/Google Maps APIs to let users search tweets and have them displayed on the Map.",
+        "description": "Used Twitter/Google Maps APIs to let users search tweets and have them displayed on the Map. Users can interact with map, twitter profiles, and see multiple tweets at once.",
         "images": ['http://i1142.photobucket.com/albums/n607/fareezzahir/jstwitterresized.jpg'],
         "link": 'https://googlemapsproject.herokuapp.com/'
     }, {
@@ -260,16 +260,10 @@ var projects = {
         }
     }
 
-    //add some more in
+    
 };
 
 
 projects.display();
 
-// education["name"] = "Columbia University";
-// education["years"] = "2007-2009";
-// education["city"] = "New York, NY";
-
-// $("#main").append(work["position"]);
-
-// $("#main").append(education.name);
+$("#mapDiv").append(googleMap);
