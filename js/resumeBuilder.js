@@ -107,7 +107,7 @@ var work = {
         "title": "CoFounder",
         "location": "Bethesda, MD",
         "dates": "October 2013-Present",
-        "description": "Cofounder of emerging markets consulting firm with business lines in International Trade and Energy. Won contract to represent US Cotton Industry in the world’ s fastest growing apparels market. US Cotton penetration (as an input into Bangladeshi apparels manufacturing) has increased from 2 % to roughly 12 % during our engagement."
+        "description": "Cofounder of emerging markets consulting firm with business lines in International Trade, Energy, and Technology. Won contract to represent US Cotton Industry in the world’s fastest growing apparels market. US Cotton penetration (as an input into Bangladeshi apparels manufacturing) has increased from 2 % to roughly 12 % during our engagement."
     }, {
         "employer": "SEAF",
         "title": "Project Manager",
