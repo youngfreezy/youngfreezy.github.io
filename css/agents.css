@@ -1,4 +1,4 @@
-/* Agent portfolio: diagram sources live in /diagrams. */
+/* Agent case studies. Original diagrams and editable sources live in /diagrams. */
 .agent-section {
   scroll-margin-top: 20px;
 }
@@ -12,133 +12,275 @@
 }
 .agent-lab {
   border: 1px solid var(--line);
-  border-radius: 24px;
+  border-radius: 16px;
   overflow: hidden;
   background: var(--white);
 }
+.agent-lab [hidden] {
+  display: none !important;
+}
 .lab-heading {
   background: var(--ink);
-  color: var(--accent);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 22px 32px;
+  gap: 20px;
+  padding: 28px 32px;
 }
-.lab-heading .eyebrow::before {
-  content: "";
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  background: var(--accent);
-  border-radius: 50%;
-  margin-right: 10px;
+.lab-heading .eyebrow {
+  color: var(--accent);
+}
+.lab-heading p {
+  color: var(--white);
+  font-size: 24px;
+  letter-spacing: -0.035em;
+  margin-top: 4px;
 }
 .lab-note {
-  font-size: 12px;
-  color: var(--dark-muted);
+  font:
+    11px/1.8 "SFMono-Regular",
+    Consolas,
+    monospace;
+  color: #c0c7b8;
+  text-align: right;
 }
 .mission-picker {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  padding: 16px;
-  background: #e8ebdf;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
   border-bottom: 1px solid var(--line);
 }
-.mission-picker[hidden],
-.mission[hidden] {
-  display: none;
-}
 .mission-picker button {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
   color: var(--ink);
   font: inherit;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 16px 12px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  background: transparent;
+  text-align: left;
+  padding: 19px 24px;
+  border: 0;
+  box-shadow: inset 3px 0 transparent;
+  background: #f0f2e9;
   cursor: pointer;
-  transition:
-    background 0.18s,
-    transform 0.18s;
+  transition: background 0.15s;
 }
-.mission-picker button span {
+.mission-picker .mission-index {
+  font:
+    11px/1.8 "SFMono-Regular",
+    Consolas,
+    monospace;
+  color: #515e47;
+}
+.mission-picker strong {
+  display: block;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.mission-picker small {
+  display: block;
   font-size: 11px;
-  margin-right: 10px;
-  opacity: 0.7;
+  line-height: 1.6;
+  color: #515e47;
+  margin-top: 3px;
 }
 .mission-picker button:hover {
-  background: #f3f5eb;
-  transform: translateY(-2px);
+  background: #e7eddd;
 }
 .mission-picker button[aria-pressed="true"] {
-  background: var(--ink);
-  color: var(--accent);
+  background: #e1edce;
+  box-shadow: inset 3px 0 #435d30;
 }
-.mission-picker button:focus-visible {
+.agent-lab button:focus-visible {
+  position: relative;
+  z-index: 1;
   outline: 2px solid var(--ink);
-  outline-offset: 3px;
+  outline-offset: -5px;
+}
+.depth-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 32px;
+  border-bottom: 1px solid var(--line);
+}
+.depth-toolbar p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.depth-picker {
+  display: flex;
+  padding: 4px;
+  background: #e9ede1;
+  border-radius: 8px;
+  gap: 4px;
+}
+.depth-picker button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 5px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.depth-picker strong {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.depth-picker span {
+  display: block;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #616b58;
+}
+.depth-picker button:hover {
+  background: #f6f8f0;
+}
+.depth-picker button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--white);
+}
+.depth-picker button[aria-pressed="true"] span {
+  color: #c8d0c0;
+}
+.depth-picker button[aria-pressed="true"]:focus-visible {
+  outline-color: var(--accent);
 }
 .mission {
-  padding: 36px 32px 24px;
-  animation: mission-enter 0.25s ease-out;
+  padding: 32px;
 }
 .mission + .mission {
   border-top: 1px solid var(--line);
 }
 .mission-intro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: start;
   gap: 48px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 .mission-intro .eyebrow {
   margin-bottom: 12px;
 }
 .mission-intro h3 {
-  max-width: 510px;
-  font-size: clamp(27px, 3vw, 38px);
+  font-size: clamp(27px, 2.9vw, 38px);
+  max-width: 620px;
 }
 .mission-intro > p {
+  font-size: 14px;
+  line-height: 1.8;
+  padding-top: 3px;
+}
+.explanation-heading {
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+  margin-bottom: 22px;
+}
+.explanation-heading .eyebrow {
+  color: #657058;
+  font-size: 10px;
+}
+.explanation-heading h4 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+  margin: 8px 0 0;
+}
+.explanation-heading p {
+  max-width: 840px;
   font-size: 15px;
-  line-height: 1.75;
-  max-width: 490px;
+  line-height: 1.8;
+  margin-top: 12px;
 }
 .agent-map {
   margin: 0;
-  border: 1px solid #dce1d3;
-  border-radius: 16px;
+  border: 1px solid #d7dfcd;
+  border-radius: 8px;
   overflow: hidden;
   background: #eef1e6;
 }
-.agent-map picture {
+.agent-map picture,
+.agent-map img {
   display: block;
 }
 .agent-map img {
-  display: block;
   width: 100%;
   height: auto;
 }
 .agent-map figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
   border-top: 1px solid #dce1d3;
-  padding: 18px 24px;
+  padding: 12px 20px;
   color: #4f5947;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 1.6;
+}
+.agent-map figcaption a {
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.technical-map {
+  background: #202720;
+  border-color: #414d3a;
+}
+.technical-map figcaption {
+  color: #c4cdbd;
+  border-color: #414d3a;
+}
+.overview-map {
+  margin-bottom: 24px;
+}
+.explanation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  margin: 24px 0 30px;
+}
+.explanation-grid > div + div {
+  border-left: 1px solid var(--line);
+  padding-left: 26px;
+}
+.explanation-grid dt {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.explanation-grid dt span {
+  display: block;
+  color: #5c6950;
+  font:
+    10px/1.5 "SFMono-Regular",
+    Consolas,
+    monospace;
+  margin-bottom: 8px;
+}
+.explanation-grid dd {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
 }
 .mission-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  padding: 24px 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
 }
 .mission-result strong {
   display: block;
-  font-size: 22px;
+  font-size: 21px;
   letter-spacing: -0.035em;
   line-height: 1.3;
 }
@@ -151,35 +293,6 @@
 .mission-footer .tags {
   margin: 0;
   justify-content: flex-end;
-}
-.mission-details {
-  border-top: 1px solid var(--line);
-  padding-top: 16px;
-}
-.mission-details summary {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 600;
-}
-.mission-details summary::marker {
-  content: "";
-}
-.mission-details summary::-webkit-details-marker {
-  display: none;
-}
-.mission-details[open] summary span {
-  transform: rotate(45deg);
-}
-.mission-details p {
-  max-width: 870px;
-  margin: 20px 0 12px;
-  font-size: 14px;
-  line-height: 1.8;
-}
-.mission-details .text-link {
-  font-size: 13px;
 }
 .agent-postscript {
   display: flex;
@@ -195,12 +308,20 @@
 .agent-postscript a {
   flex-shrink: 0;
 }
-@keyframes mission-enter {
-  from {
-    transform: translateY(5px);
+.mobile-map-link {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .depth-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
   }
-  to {
-    transform: translateY(0);
+  .depth-picker {
+    width: 100%;
+  }
+  .depth-picker button {
+    flex: 1;
   }
 }
 @media (max-width: 850px) {
@@ -211,9 +332,6 @@
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  .mission-intro > p {
-    max-width: none;
-  }
   .mission-footer,
   .agent-postscript {
     align-items: flex-start;
@@ -222,70 +340,96 @@
   .mission-footer .tags {
     justify-content: flex-start;
   }
+  .explanation-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .explanation-grid > div + div {
+    border-left: 0;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+  }
+  .explanation-grid dt span {
+    display: inline;
+    margin-right: 12px;
+  }
 }
 @media (max-width: 600px) {
   .lab-heading {
-    padding: 18px;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 4px;
+    padding: 22px 18px;
   }
-  .mission-picker {
-    padding: 10px;
-    gap: 6px;
+  .lab-heading p {
+    font-size: 21px;
+  }
+  .lab-note {
+    font-size: 9px;
   }
   .mission-picker button {
-    padding: 13px 6px;
+    padding: 14px 12px;
+    gap: 8px;
+  }
+  .mission-picker strong {
     font-size: 12px;
   }
-  .mission-picker button span {
-    margin-right: 5px;
+  .mission-picker small {
+    font-size: 10px;
+  }
+  .mission-picker .mission-index {
+    font-size: 9px;
+  }
+  .depth-toolbar {
+    padding: 20px 16px;
+  }
+  .depth-picker {
+    gap: 2px;
+  }
+  .depth-picker button {
+    padding: 10px 7px;
+  }
+  .depth-picker span {
+    font-size: 9px;
+  }
+  .depth-picker strong {
+    font-size: 11px;
   }
   .mission {
-    padding: 24px 16px 20px;
+    padding: 24px 16px;
   }
   .agent-map {
     margin-inline: -10px;
   }
   .agent-map figcaption {
-    padding: 16px;
-    font-size: 13px;
+    padding: 12px;
+    flex-wrap: wrap;
+    font-size: 10px;
+    gap: 6px;
   }
   .agent-section .section-heading {
     gap: 20px;
   }
+  .desktop-map-link {
+    display: none;
+  }
+  .mobile-map-link {
+    display: inline;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
-  .mission {
-    animation: none;
-  }
   .mission-picker button {
     transition: none;
   }
-  .mission-picker button:hover {
-    transform: none;
-  }
 }
 @media print {
-  .mission[hidden] {
-    display: block;
+  .agent-lab .mission[hidden],
+  .agent-lab .depth-panel[hidden] {
+    display: block !important;
   }
-  .mission-picker {
-    display: none;
+  .mission-picker,
+  .depth-toolbar {
+    display: none !important;
   }
-  .mission {
+  .agent-map {
     break-inside: avoid;
-  }
-}
-
-.mobile-map-link {
-  display: none;
-}
-@media (max-width: 600px) {
-  .mission-details .desktop-map-link {
-    display: none;
-  }
-  .mission-details .mobile-map-link {
-    display: inline;
   }
 }
