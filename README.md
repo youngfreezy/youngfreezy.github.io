@@ -1,6 +1,6 @@
 # Fareez Ahmed · Portfolio
 
-Personal portfolio at https://youngfreezy.github.io/, updated from the September 2026 resume. Plain HTML and CSS; GitHub Pages publishes the root of `master`.
+Personal portfolio at https://youngfreezy.github.io/, updated from the September 2026 resume. Plain HTML, CSS, and a small progressive-enhancement script; GitHub Pages publishes the root of `master`.
 
 Preview: `python3 -m http.server 8080` and open http://localhost:8080.
 
@@ -31,3 +31,11 @@ Sources:
 - https://help.reverb.com/hc/en-us/articles/41988533319579-Where-can-I-update-my-bank-account-on-file
 - https://www.va.gov/claim-or-appeal-status/
 - https://www.va.gov/asistencia-y-recursos-en-espanol
+
+## Agent workflow gallery
+
+The leading work section now shows four illustrated workflows: Mayo Clinic content review, the Polaris agent runtime, PioWorkflow, and Signet AI Foundry. Descriptions are based on Fareez’s resume and his work notes, accessed with his permission. Only selected professional summaries are published; raw notes and internal references remain outside this repository. The replay description distinguishes local verification from pending production rollout.
+
+Robot illustrations are original draw.io diagrams, not product screenshots or live execution traces. Editable sources are in `diagrams/`; embedded editable SVG exports are in `images/agents/`. Mobile diagrams use a vertical layout. The mission buttons progressively enhance four readable articles; without JavaScript, all four articles remain visible. Native buttons support keyboard activation, and animation respects reduced motion. Edit selection behavior in `js/agents.js` and gallery styles in `css/agents.css`.
+
+Validation: all four mission selections and keyboard activation, native disclosures, mobile map links, and the JavaScript-disabled fallback were checked in the browser. No horizontal overflow at 320, 390, 600, 768, 1024, or 1440px. Desktop and mobile axe WCAG 2 AA / 2.1 AA scans reported no violations. Local assets, fragment links, unique IDs, SVG/XML parsing, JavaScript syntax, and diff whitespace checks passed. All eight diagrams were visually reviewed; an independent code/content review approved the final revision.
