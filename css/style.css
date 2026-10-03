@@ -13,7 +13,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 32px;
+  scroll-padding-top: 112px;
 }
 body {
   margin: 0;
@@ -99,8 +99,14 @@ p {
   background: var(--ink);
   color: var(--white);
 }
+.site-masthead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid #484e43;
+}
 .site-header {
-  height: 104px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,11 +131,38 @@ p {
 }
 .site-header nav {
   display: flex;
+  align-items: center;
   gap: 36px;
   font-size: 13px;
 }
+.nav-contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 17px;
+  min-height: 44px;
+  background: var(--accent);
+  color: var(--ink);
+  font-weight: 600;
+}
+.nav-contact:hover {
+  background: #e3ffb6;
+  text-decoration: none;
+}
+.hero-links {
+  display: flex;
+  gap: 24px;
+  margin-top: 22px;
+  color: var(--dark-muted);
+  font-size: 12px;
+}
+.hero-links a {
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+}
 .hero {
-  padding-top: 55px;
+  padding-top: 48px;
 }
 .hero > .eyebrow {
   color: var(--dark-muted);
@@ -256,7 +289,7 @@ p {
   justify-content: space-between;
   gap: 20px;
   border-top: 1px solid #484e43;
-  margin-top: 60px;
+  margin-top: 40px;
   padding-block: 20px;
   color: var(--dark-muted);
   font-size: 11px;
@@ -550,15 +583,30 @@ details p {
 }
 .career > div {
   display: grid;
-  grid-template-columns: 125px 1fr;
-  gap: 25px;
+  grid-template-columns: 36px 1fr auto;
+  align-items: center;
+  gap: 14px;
   padding-block: 17px;
   border-bottom: 1px solid var(--line);
 }
-.career > div > span {
+.career-date {
   font-size: 11px;
   color: var(--muted);
-  padding-top: 2px;
+  white-space: nowrap;
+}
+.company-mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #e5e8dd;
+  font-size: 11px;
+  font-weight: 600;
+}
+.career > div:first-of-type .company-mark {
+  background: var(--ink);
+  color: var(--accent);
 }
 .career p {
   font-size: 12px;
@@ -605,12 +653,12 @@ details p {
   color: var(--muted);
 }
 .contact {
-  background: var(--ink);
-  color: var(--white);
+  background: var(--accent);
+  color: var(--ink);
   padding-block: 70px 80px;
 }
 .contact .eyebrow {
-  color: var(--dark-muted);
+  color: #455039;
 }
 .contact-grid {
   display: grid;
@@ -620,14 +668,14 @@ details p {
   align-items: end;
 }
 .contact h2 {
-  font-size: clamp(42px, 4.5vw, 64px);
+  font-size: clamp(56px, 6.2vw, 88px);
 }
 .contact em {
-  color: var(--accent);
+  color: var(--ink);
 }
 .contact-grid p {
-  font-size: 14px;
-  color: var(--dark-muted);
+  font-size: 15px;
+  color: #455039;
   margin-bottom: 20px;
 }
 .contact-email {
@@ -636,17 +684,25 @@ details p {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding-bottom: 12px;
-  border-bottom: 1px solid #606856;
+  padding-block: 22px 12px;
+  border-bottom: 1px solid #7b945e;
 }
 .contact-email span {
-  color: var(--accent);
+  color: var(--ink);
 }
 .contact .text-link {
   border: 0;
   margin-top: 16px;
   font-size: 12px;
-  color: var(--dark-muted);
+  color: #455039;
+}
+.button-dark {
+  background: var(--ink);
+  color: var(--white);
+  min-width: 180px;
+}
+.button-dark:hover {
+  background: #394332;
 }
 .site-footer {
   display: flex;
@@ -708,7 +764,7 @@ details p {
 }
 @media (max-width: 760px) {
   .site-header {
-    height: 85px;
+    height: 72px;
   }
   .site-header nav {
     gap: 20px;
@@ -878,8 +934,12 @@ details p {
   .site-header nav {
     gap: 16px;
   }
-  .site-header nav a:first-child {
+  .site-header nav > a:not(.nav-contact) {
     display: none;
+  }
+  .nav-contact {
+    gap: 12px;
+    padding: 10px 14px;
   }
   .hero > .eyebrow {
     font-size: 9px;
@@ -931,8 +991,16 @@ details p {
     display: block;
   }
   .career > div {
-    grid-template-columns: 100px 1fr;
-    gap: 18px;
+    grid-template-columns: 32px 1fr;
+    gap: 0 12px;
+  }
+  .career-date {
+    grid-column: 2;
+  }
+  .company-mark {
+    grid-row: 1 / 3;
+    width: 32px;
+    height: 32px;
   }
   .toolbox dl {
     grid-template-columns: 1fr;
@@ -992,6 +1060,12 @@ details p {
   }
 }
 @media print {
+  .site-masthead {
+    position: static;
+  }
+  .hero-links {
+    display: none;
+  }
   body {
     background: white;
     color: black;
