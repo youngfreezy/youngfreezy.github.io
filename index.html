@@ -1,82 +1,470 @@
-<!DOCTYPE html>
-
-
-<head>
- 
-  <meta charset="utf-8">
-
-  <title>Resume</title>
-
- 
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-
-  
-  <script src="js/jQuery.js"></script>
-
-  <script src="js/helper.js"></script>
-
-
-  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
-  <meta name="viewport" content="width=device-width">
-</head>
-<body>
-  <div id="main">
-      
-    <div id="header" class="center-content clearfix">
-      <ul id="topContacts" class='flex-box'></ul>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#20231f" />
+    <title>Fareez Ahmed — Full Stack & Applied AI Engineer</title>
+    <meta
+      name="description"
+      content="Staff Full Stack & Applied AI Engineer. I build production AI systems, evaluate frontier models, and ship software across React, Python, and AWS."
+    />
+    <link rel="canonical" href="https://youngfreezy.github.io/" />
+    <meta
+      property="og:title"
+      content="Fareez Ahmed — Full Stack & Applied AI Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Production AI, frontier-model evaluation, and a decade of full-stack engineering. Selected work, open source, and experience."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://youngfreezy.github.io/" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="dark-shell">
+      <header class="site-header wrap">
+        <a class="brand" href="#" aria-label="Fareez Ahmed, home"
+          ><span class="monogram" aria-hidden="true">fa.</span> Fareez Ahmed</a
+        >
+        <nav aria-label="Main navigation">
+          <a href="#work">Work</a><a href="#about">About</a
+          ><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
     </div>
-    <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class='gray'>
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
-        <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
-  </div>
-
-
-  <script src="js/resumeBuilder.js"></script>
-
-
-
-
-  <script type="text/javascript">
-   
-
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
-</body>
+    <main id="main">
+      <div class="dark-shell">
+        <section class="hero wrap" aria-labelledby="hero-title">
+          <div class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> Staff Full Stack
+            & Applied AI Engineer
+          </div>
+          <div class="hero-grid">
+            <div>
+              <h1 id="hero-title">
+                I build <em>AI systems.</em><br />And put them<br />to the test.
+              </h1>
+              <p class="hero-intro">
+                A decade of shipping software. Now building production agent
+                platforms and evaluating the frontier models behind them.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-accent" href="#work"
+                  >Explore my work <span aria-hidden="true">↘</span></a
+                ><a
+                  class="text-link"
+                  href="Fareez_Ahmed_Resume_Sep_2026.pdf"
+                  download
+                  >Download resume <span aria-hidden="true">↓</span></a
+                >
+              </div>
+            </div>
+            <aside class="now" aria-label="Current work">
+              <span class="eyebrow">Currently</span>
+              <div>
+                <p>Building</p>
+                <a href="https://v2software.ai/"
+                  >V2 Software <span aria-hidden="true">↗</span></a
+                ><span>Staff Software Engineer</span>
+              </div>
+              <div>
+                <p>Evaluating</p>
+                <strong>Handshake AI</strong><span>AI Fellow</span
+                ><strong class="second-role"
+                  >OpenAI <small>via Mercor</small></strong
+                ><span>AI Evaluator</span>
+              </div>
+              <p class="location">
+                San Francisco / Dallas<br />Working remotely
+              </p>
+            </aside>
+          </div>
+          <div class="hero-bottom">
+            <span>Engineering, from interface to infrastructure.</span
+            ><span class="eyebrow">Selected work / 2026</span>
+          </div>
+        </section>
+      </div>
+      <section class="proof wrap" aria-label="Selected results">
+        <div>
+          <strong>10<span>+</span></strong>
+          <p>years shipping<br />production software</p>
+        </div>
+        <div>
+          <strong>&lt;10 <span>min</span></strong>
+          <p>Mayo Clinic article review<br />down from about 2 hours</p>
+        </div>
+        <div>
+          <strong>3 <span>months</span></strong>
+          <p>to deliver Signet Jewelers’<br />internal AI platform</p>
+        </div>
+      </section>
+      <section class="section wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / Selected engineering</p>
+            <h2 id="work-title">Built for the real world.</h2>
+          </div>
+          <p>
+            Client engagements through V2 Software.<br />Systems I helped take
+            into production.
+          </p>
+        </div>
+        <div class="work-grid">
+          <article class="project project-featured">
+            <div class="project-top">
+              <span class="eyebrow">Mayo Clinic</span
+              ><span class="project-number">01</span>
+            </div>
+            <h3>Less time reviewing.<br />More confidence publishing.</h3>
+            <p>
+              A five-agent workflow checks health articles against 34 validation
+              rules, with a human review step before results reach an editor.
+            </p>
+            <div class="project-result">
+              <strong>~2 hours → &lt;10 minutes</strong
+              ><span>Article review time</span>
+            </div>
+            <div class="tags">
+              <span>LangGraph</span><span>Google ADK / A2A</span
+              ><span>Next.js</span>
+            </div>
+            <details>
+              <summary>
+                Inside the build <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                A router clears straightforward cases without a model call.
+                Independent checking agents communicate over A2A; LangGraph
+                pauses the workflow for human review. Validation rules load from
+                a graph database with a file fallback, and RAGAS measured
+                groundedness and coverage before rollout.
+              </p>
+            </details>
+          </article>
+          <article class="project">
+            <div class="project-top">
+              <span class="eyebrow">Polaris IO</span
+              ><span class="project-number">02</span>
+            </div>
+            <h3>Agents with budgets.<br />Infrastructure with receipts.</h3>
+            <p>
+              An agent SDK and runtime with model-tier routing, schema-based
+              escalation, cross-provider failover, and budget checks before each
+              call.
+            </p>
+            <div class="project-result">
+              <strong>144 evaluation runs</strong
+              ><span>To select the agent framework</span>
+            </div>
+            <div class="tags">
+              <span>Python / FastAPI</span><span>TypeScript</span
+              ><span>AWS EKS</span>
+            </div>
+            <details>
+              <summary>
+                Inside the build <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Built client-level cost attribution, budget caps, and kill
+                switches verified against live provider usage. Added encrypted,
+                tenant-scoped replay of completed runs and tracing that blocks
+                unredacted sensitive fields. The PioWorkflow evaluation
+                framework reduced agent-skill testing cost from $4.49 to under
+                $1 per run.
+              </p>
+            </details>
+          </article>
+          <article class="project">
+            <div class="project-top">
+              <span class="eyebrow">Signet Jewelers</span
+              ><span class="project-number">03</span>
+            </div>
+            <h3>An AI studio.<br />In production in three months.</h3>
+            <p>
+              AI Foundry gives internal teams a place to build agents that
+              search their own documents, backed by a shared Amazon Bedrock
+              gateway.
+            </p>
+            <div class="project-result">
+              <strong>Days → hours</strong
+              ><span>Pull-request review with a three-agent copilot</span>
+            </div>
+            <div class="tags">
+              <span>Amazon Bedrock</span><span>React</span><span>AWS</span>
+            </div>
+            <details>
+              <summary>
+                Inside the build <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                The gateway enforces per-team budgets and rate limits, caches
+                responses, and tracks token usage by team, model, and project.
+                Model rerouting and shutoff are configuration changes. Streaming
+                chat uses keep-alive heartbeats so long responses survive CDN
+                idle timeouts.
+              </p>
+            </details>
+          </article>
+          <article class="project project-muted">
+            <div class="project-top">
+              <span class="eyebrow">eSimplicity</span
+              ><span class="project-number">04</span>
+            </div>
+            <h3>AI tools that government<br />teams can make their own.</h3>
+            <p>
+              SHINE, a reusable chat and search portal on Databricks. Katalyst
+              Forge, an AI software-delivery platform with cost controls and
+              evaluation gates.
+            </p>
+            <div class="project-result">
+              <strong>40 agents, one release</strong
+              ><span>Consolidated for Katalyst Forge</span>
+            </div>
+            <div class="tags">
+              <span>Databricks</span><span>Astro / React</span
+              ><span>Google ADK</span>
+            </div>
+            <details>
+              <summary>
+                Inside the build <span aria-hidden="true">+</span>
+              </summary>
+              <p>
+                Built SHINE’s frontend, chat history, role-based access, and
+                rate limits; provisioned model serving and AI gateway
+                infrastructure as code. Co-built Katalyst Forge with model
+                routing under spend ceilings and A2A support. Independently
+                delivered a change-guide publishing bot and a Medicaid
+                data-quality demo with verifiable human release approval.
+              </p>
+            </details>
+          </article>
+        </div>
+        <div class="client-history">
+          <p class="eyebrow">Also shipped for</p>
+          <p>
+            JPMorgan Chase <span>·</span> CACI / Army <span>·</span> Rivian
+            <span>·</span> College Board <span>·</span> Ticketmaster
+            <span>·</span> Etsy / Reverb <span>·</span> Bayer
+            <span>·</span> Veterans Affairs
+          </p>
+        </div>
+      </section>
+      <section class="evaluation" aria-labelledby="eval-title">
+        <div class="wrap evaluation-grid">
+          <div>
+            <p class="eyebrow">02 / Model evaluation</p>
+            <h2 id="eval-title">
+              Building is half<br />the work.<br /><em>Testing is the rest.</em>
+            </h2>
+            <p class="evaluation-intro">
+              I work on both sides of AI: engineering the systems, then checking
+              where models and coding agents fail.
+            </p>
+          </div>
+          <div class="evaluation-roles">
+            <article>
+              <div class="role-heading">
+                <h3>Handshake AI</h3>
+                <span>Jul 2026 — present</span>
+              </div>
+              <p class="role-subtitle">AI Fellow · Frontier-model evaluation</p>
+              <p>
+                I write coding tasks with isolated Docker environments, hidden
+                verifiers, and reference solutions. I also compare coding agents
+                on staged engineering tasks, rerun benchmarks, and write
+                independent probes to find regressions.
+              </p>
+              <div class="tags">
+                <span>Coding-agent evaluation</span><span>Verifier testing</span
+                ><span>Reproducible evidence</span>
+              </div>
+            </article>
+            <article>
+              <div class="role-heading">
+                <h3>OpenAI <span>via Mercor</span></h3>
+                <span>Aug 2026 — present</span>
+              </div>
+              <p class="role-subtitle">
+                AI Evaluator · Writing & visual quality
+              </p>
+              <p>
+                Evaluated hundreds of model-written documents and slide decks
+                against calibrated rubrics. Built conformance checks and two
+                independent AI judges that review each draft before submission.
+              </p>
+              <div class="tags">
+                <span>Rubric calibration</span><span>LLM-as-judge</span
+                ><span>Human review</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section wrap"
+        id="open-source"
+        aria-labelledby="oss-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 / Open source</p>
+            <h2 id="oss-title">Made to be used.</h2>
+          </div>
+          <a class="text-link" href="https://github.com/youngfreezy"
+            >All repositories <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="oss-grid">
+          <article>
+            <div class="oss-icon" aria-hidden="true">[ jh ]</div>
+            <h3>JobHunter Agent</h3>
+            <p>
+              An eight-agent job-application pipeline with discovery, form
+              filling, live progress, and human approval before any submission.
+            </p>
+            <div class="tags">
+              <span>LangGraph</span><span>FastAPI</span><span>Next.js</span>
+            </div>
+            <div class="oss-links">
+              <a href="https://jobhunteragent.com/">Visit product ↗</a
+              ><a href="https://github.com/youngfreezy/job-hunter-agent"
+                >Source code ↗</a
+              >
+            </div>
+          </article>
+          <article>
+            <div class="oss-icon" aria-hidden="true">{ u_ }</div>
+            <h3>unslopify</h3>
+            <p>
+              A Python writing-quality linter with 27 deterministic checks and a
+              cross-document phrase bank. Runs in CI without model calls.
+            </p>
+            <div class="tags">
+              <span>Python</span><span>CLI</span><span>PyPI</span>
+            </div>
+            <div class="oss-links">
+              <a href="https://github.com/youngfreezy/unslopify"
+                >Source code ↗</a
+              ><a href="https://pypi.org/project/unslopify/">View on PyPI ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section
+        class="section about wrap"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="about-intro">
+          <p class="eyebrow">04 / Background</p>
+          <h2 id="about-title">Full stack.<br />Full ownership.</h2>
+          <p>
+            I take work from the interface through the backend to deployment:
+            React and TypeScript, Python services, and cloud infrastructure.
+          </p>
+          <p>
+            My background in economics and international affairs informs how I
+            think about systems, tradeoffs, and the people using what I build.
+          </p>
+          <a class="text-link" href="Fareez_Ahmed_Resume_Sep_2026.pdf" download
+            >Read the full resume <span aria-hidden="true">↓</span></a
+          >
+          <p class="clearance">Active Secret Clearance</p>
+        </div>
+        <div class="about-details">
+          <div class="career">
+            <h3 class="eyebrow">Engineering experience</h3>
+            <div>
+              <span>2018 — present</span>
+              <p><strong>V2 Software LLC</strong>Staff Software Engineer</p>
+            </div>
+            <div>
+              <span>2017 — 2018</span>
+              <p>
+                <strong>CoStar Realty Group</strong>Senior Software Engineer
+              </p>
+            </div>
+            <div>
+              <span>2016 — 2017</span>
+              <p><strong>DataScan</strong>Senior Software Engineer</p>
+            </div>
+            <div>
+              <span>2015 — 2016</span>
+              <p><strong>General Electric</strong>Software Engineer</p>
+            </div>
+          </div>
+          <div class="education">
+            <h3 class="eyebrow">Education & certification</h3>
+            <p>
+              <strong>Columbia University</strong>MA, International Affairs and
+              Economics
+            </p>
+            <p>
+              <strong>George Washington University</strong>BA, Economics · Summa
+              cum laude · Phi Beta Kappa
+            </p>
+            <p><strong>DeepLearning.AI</strong>Agentic AI Engineering · 2025</p>
+          </div>
+        </div>
+        <div class="toolbox">
+          <h3 class="eyebrow">The working toolkit</h3>
+          <dl>
+            <div>
+              <dt>AI & evaluation</dt>
+              <dd>
+                LangGraph, Google ADK, A2A, MCP, Bedrock, RAGAS, MLflow GenAI
+              </dd>
+            </div>
+            <div>
+              <dt>Applications</dt>
+              <dd>React, Next.js, TypeScript, Python, FastAPI, Node.js</dd>
+            </div>
+            <div>
+              <dt>Infrastructure & data</dt>
+              <dd>AWS, Databricks, Terraform, Kubernetes, PostgreSQL, Neo4j</dd>
+            </div>
+            <div>
+              <dt>Quality & delivery</dt>
+              <dd>Playwright, Pytest, Jest, OpenTelemetry, GitHub Actions</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="wrap">
+          <p class="eyebrow">05 / Get in touch</p>
+          <div class="contact-grid">
+            <h2 id="contact-title">
+              Have something<br />worth <em>building?</em>
+            </h2>
+            <div>
+              <p>
+                Production AI, a full-stack platform,<br />or a model that needs
+                a harder test.
+              </p>
+              <a class="contact-email" href="mailto:Fareez.Ahmed@gmail.com"
+                >Fareez.Ahmed@gmail.com <span aria-hidden="true">↗</span></a
+              ><a class="text-link" href="https://v2software.ai/"
+                >Explore V2 Software <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer wrap">
+      <span>© 2026 Fareez Ahmed</span>
+      <nav aria-label="Social links">
+        <a href="https://github.com/youngfreezy">GitHub ↗</a
+        ><a href="https://www.linkedin.com/in/fareezahmed/">LinkedIn ↗</a
+        ><a href="https://huggingface.co/fareezaiahmed">Hugging Face ↗</a>
+      </nav>
+      <a href="#">Back to top ↑</a>
+    </footer>
+  </body>
 </html>
