@@ -652,6 +652,22 @@ details p {
   line-height: 1.8;
   color: var(--muted);
 }
+.toolbox .ai-toolkit {
+  grid-column: 1 / -1;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.toolbox .ai-toolkit > dt {
+  font-size: 16px;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+.toolbox .ai-toolkit-grid {
+  gap: 22px 32px;
+}
+.toolbox .ai-toolkit-grid dt {
+  font-size: 12px;
+}
 .contact {
   background: var(--accent);
   color: var(--ink);

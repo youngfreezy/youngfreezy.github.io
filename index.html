@@ -847,7 +847,7 @@
                   height="294"
                   loading="lazy"
                   decoding="async"
-                  alt="Article routes through deterministic checks or parallel ADK agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
+                  alt="Article routes through deterministic checks or parallel checking agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
               /></picture>
               <figcaption>
                 Workflow overview · simplified roles and handoffs
@@ -878,7 +878,7 @@
                     height="412"
                     loading="lazy"
                     decoding="async"
-                    alt="Article routes through deterministic checks or parallel ADK agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
+                    alt="Article routes through deterministic checks or parallel checking agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
                 /></picture>
                 <figcaption>
                   Selected architecture · simplified for this portfolio
@@ -1002,7 +1002,7 @@
                 ><span>Article review time</span>
               </div>
               <div class="tags">
-                <span>LangGraph</span><span>Google ADK / A2A</span
+                <span>LangGraph</span><span>A2A</span
                 ><span>RAGAS</span>
               </div>
             </div>
@@ -1900,10 +1900,58 @@
         <div class="toolbox">
           <h3 class="eyebrow">The working toolkit</h3>
           <dl>
-            <div>
+            <div class="ai-toolkit">
               <dt>AI & evaluation</dt>
               <dd>
-                LangGraph, Google ADK, A2A, MCP, Bedrock, RAGAS, MLflow GenAI
+                <dl class="ai-toolkit-grid">
+                  <div>
+                    <dt>Agents & orchestration</dt>
+                    <dd>
+                      LangGraph, LangChain, LlamaIndex, Inngest; multi-agent
+                      workflows, context engineering, and resumable state
+                      machines.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Models & protocols</dt>
+                    <dd>
+                      OpenAI and Anthropic APIs, Amazon Bedrock, AgentCore; A2A,
+                      MCP servers and clients, structured outputs, and tool
+                      calling.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Retrieval & knowledge</dt>
+                    <dd>
+                      RAG, PGVector, Neo4j, document retrieval, graph-backed
+                      validation rules, and groundedness checks.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Routing & cost controls</dt>
+                    <dd>
+                      LiteLLM, OpenRouter, Databricks AI Gateway; model-tier
+                      escalation, cross-provider failover, budgets, rate limits,
+                      and cost attribution.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Evaluation & benchmarking</dt>
+                    <dd>
+                      RAGAS, MLflow GenAI, LLM-as-judge, rubric design and
+                      calibration, hidden verifiers, isolated agent comparisons,
+                      and regression evals in CI.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>Agent engineering & oversight</dt>
+                    <dd>
+                      Claude Code, Codex CLI, Cursor; cross-model review,
+                      evidence-backed QA, human approval gates, kill switches,
+                      and redacted tracing.
+                    </dd>
+                  </div>
+                </dl>
               </dd>
             </div>
             <div>
