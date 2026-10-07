@@ -116,142 +116,157 @@
         </div>
       </section>
       <section
+        aria-labelledby="agents-title"
         class="section wrap agent-section"
         id="work"
-        aria-labelledby="agents-title"
       >
         <div class="section-heading">
           <div>
             <p class="eyebrow">01 / Applied AI + agentic engineering</p>
             <h2 id="agents-title">
-              Build the system.<br /><em>Test its limits.</em>
+              Build the system.
+              <br />
+              <em> Test its limits. </em>
             </h2>
           </div>
           <p>
-            From agent infrastructure to model evaluation.<br />Explore the work
-            at your level of detail.<br /><a
-              class="text-link"
-              href="#interfaces"
-              >See the interface work, too ↓</a
-            >
+            From agent infrastructure to model evaluation.
+            <br />
+            Explore the work at your level of detail.
+            <br />
+            <a class="text-link" href="#interfaces">
+              See the interface work, too ↓
+            </a>
           </p>
         </div>
         <div class="agent-lab">
-          <div class="lab-heading">
+          <div class="depth-toolbar" hidden="">
             <div>
-              <span class="eyebrow">Inside the systems</span>
-              <p>Engineering, explained.</p>
-            </div>
-            <span class="lab-note"
-              >06 case studies<br />03 levels of detail</span
-            >
-          </div>
-          <div
-            class="mission-picker"
-            role="group"
-            aria-label="Choose an AI case study"
-            hidden
-          >
-            <button
-              type="button"
-              aria-pressed="true"
-              aria-controls="mission-studio"
-            >
-              <span class="mission-index" aria-hidden="true">01</span
-              ><span
-                ><strong>AI studio</strong
-                ><small>Signet Jewelers / AI Foundry</small></span
-              ></button
-            ><button
-              type="button"
-              aria-pressed="false"
-              aria-controls="mission-workflow"
-            >
-              <span class="mission-index" aria-hidden="true">02</span
-              ><span
-                ><strong>Agentic engineering</strong
-                ><small>Polaris IO / PioWorkflow</small></span
-              ></button
-            ><button
-              type="button"
-              aria-pressed="false"
-              aria-controls="mission-runtime"
-            >
-              <span class="mission-index" aria-hidden="true">03</span
-              ><span
-                ><strong>Agent runtime</strong><small>Polaris IO</small></span
-              ></button
-            ><button
-              type="button"
-              aria-pressed="false"
-              aria-controls="mission-review"
-            >
-              <span class="mission-index" aria-hidden="true">04</span
-              ><span
-                ><strong>AI content review</strong
-                ><small>Mayo Clinic</small></span
-              ></button
-            ><button
-              type="button"
-              aria-pressed="false"
-              aria-controls="mission-handshake"
-            >
-              <span class="mission-index" aria-hidden="true">05</span
-              ><span
-                ><strong>Coding-agent evaluation</strong
-                ><small>Handshake AI</small></span
-              ></button
-            ><button
-              type="button"
-              aria-pressed="false"
-              aria-controls="mission-evaluation"
-            >
-              <span class="mission-index" aria-hidden="true">06</span
-              ><span
-                ><strong>Writing + visual evaluation</strong
-                ><small>OpenAI via Mercor</small></span
-              >
-            </button>
-          </div>
-          <div class="depth-toolbar" hidden>
-            <div>
-              <span class="eyebrow">Choose your depth</span>
-              <p>Same work. A closer look.</p>
+              <span class="explorer-label"> THE AI EXPLAINER </span>
+              <span aria-hidden="true" class="case-count">
+                06 CASE STUDIES
+              </span>
             </div>
             <div
+              aria-label="Explanation depth"
               class="depth-picker"
               role="group"
-              aria-label="Explanation depth"
             >
               <button
-                type="button"
-                data-depth="engineering"
-                aria-pressed="true"
                 aria-controls="studio-engineering workflow-engineering runtime-engineering review-engineering handshake-engineering evaluation-engineering"
-              >
-                <strong>Engineering</strong
-                ><span>Architecture & tradeoffs</span></button
-              ><button
+                aria-label="Engineering — Architecture &amp; tradeoffs"
+                aria-pressed="true"
+                data-depth="engineering"
+                title="Architecture &amp; tradeoffs"
                 type="button"
-                data-depth="eli8"
-                aria-pressed="false"
+              >
+                <strong> Engineering </strong>
+              </button>
+              <button
                 aria-controls="studio-eli8 workflow-eli8 runtime-eli8 review-eli8 handshake-eli8 evaluation-eli8"
-              >
-                <strong>ELI8</strong><span>How it works</span></button
-              ><button
-                type="button"
-                data-depth="eli5"
+                aria-label="ELI8 — How it works"
                 aria-pressed="false"
-                aria-controls="studio-eli5 workflow-eli5 runtime-eli5 review-eli5 handshake-eli5 evaluation-eli5"
+                data-depth="eli8"
+                title="How it works"
+                type="button"
               >
-                <strong>ELI5</strong><span>The simple version</span>
+                <strong> ELI8 </strong>
+              </button>
+              <button
+                aria-controls="studio-eli5 workflow-eli5 runtime-eli5 review-eli5 handshake-eli5 evaluation-eli5"
+                aria-label="ELI5 — The simple version"
+                aria-pressed="false"
+                data-depth="eli5"
+                title="The simple version"
+                type="button"
+              >
+                <strong> ELI5 </strong>
               </button>
             </div>
           </div>
+          <div
+            aria-label="Choose an AI case study"
+            class="mission-picker"
+            hidden=""
+            role="group"
+          >
+            <button
+              aria-controls="mission-studio"
+              aria-pressed="true"
+              id="case-tab-1"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 01 </span>
+              <span>
+                <strong> AI studio </strong>
+                <small> Signet Jewelers / AI Foundry </small>
+              </span>
+            </button>
+            <button
+              aria-controls="mission-workflow"
+              aria-pressed="false"
+              id="case-tab-2"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 02 </span>
+              <span>
+                <strong> Agent workflow </strong>
+                <small> Polaris IO / PioWorkflow </small>
+              </span>
+            </button>
+            <button
+              aria-controls="mission-runtime"
+              aria-pressed="false"
+              id="case-tab-3"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 03 </span>
+              <span>
+                <strong> Agent runtime </strong>
+                <small> Polaris IO </small>
+              </span>
+            </button>
+            <button
+              aria-controls="mission-review"
+              aria-pressed="false"
+              id="case-tab-4"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 04 </span>
+              <span>
+                <strong> Content review </strong>
+                <small> Mayo Clinic </small>
+              </span>
+            </button>
+            <button
+              aria-controls="mission-handshake"
+              aria-pressed="false"
+              id="case-tab-5"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 05 </span>
+              <span>
+                <strong> Coding evaluation </strong>
+                <small> Handshake AI </small>
+              </span>
+            </button>
+            <button
+              aria-controls="mission-evaluation"
+              aria-pressed="false"
+              id="case-tab-6"
+              type="button"
+            >
+              <span aria-hidden="true" class="mission-index"> 06 </span>
+              <span>
+                <strong> Writing + visual </strong>
+                <small> OpenAI via Mercor </small>
+              </span>
+            </button>
+          </div>
           <article
+            aria-labelledby="mission-title-studio"
             class="mission"
             id="mission-studio"
-            aria-labelledby="mission-title-studio"
           >
             <div class="mission-intro">
               <div>
@@ -259,72 +274,81 @@
                 <h3 id="mission-title-studio">
                   A shared platform for useful agents.
                 </h3>
+                <p>
+                  An internal agent studio backed by a governed Bedrock gateway
+                  and streaming chat.
+                </p>
               </div>
-              <p>
-                An internal agent studio backed by a governed Bedrock gateway
-                and streaming chat.
-              </p>
+              <div class="mission-result">
+                <strong> In production in 3 months </strong>
+                <span> Internal AI platform delivery </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/studio-mobile.svg" />
+                  srcset="images/agents/studio-mobile.svg"
+                />
                 <img
-                  src="images/agents/studio.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="Agent studio to shared gateway, Amazon Bedrock, and streaming chat. The gateway provides team controls and usage attribution."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/studio.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="studio-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="studio-engineering"
-              aria-labelledby="studio-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="studio-engineering-title">
                   A governed model gateway with a resilient chat interface.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/studio-technical-mobile.svg" />
+                    srcset="images/agents/studio-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/studio-technical.svg"
-                    width="1202"
-                    height="302"
-                    loading="lazy"
-                    decoding="async"
                     alt="Agent studio to shared gateway, Amazon Bedrock, and streaming chat. The gateway provides team controls and usage attribution."
-                /></picture>
+                    decoding="async"
+                    height="301"
+                    loading="lazy"
+                    src="images/agents/studio-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/studio-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/studio-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Request path</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Request path
+                  </dt>
                   <dd>
                     Internal agents send model traffic through a shared Amazon
                     Bedrock gateway. Budgets and rate limits apply per team;
@@ -332,7 +356,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Streaming transport</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Streaming transport
+                  </dt>
                   <dd>
                     Chat streams incremental text. Keep-alive heartbeats protect
                     long responses from CDN idle timeouts without treating those
@@ -340,7 +367,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Operations</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Operations
+                  </dt>
                   <dd>
                     Token metrics are attributed by team, model, and project.
                     Model rerouting and shutoff are configuration changes, so
@@ -350,13 +380,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="studio-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="studio-eli8"
-              aria-labelledby="studio-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="studio-eli8-title">One front door for many agents.</h4>
                 <p>
                   The studio gives people a place to build document-search
@@ -366,18 +395,27 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Configure</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Configure
+                  </dt>
                   <dd>Teams build agents around their own documents.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Govern</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Govern
+                  </dt>
                   <dd>
                     The gateway applies team budgets, rate limits, and response
                     caching.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Keep connected</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Keep connected
+                  </dt>
                   <dd>
                     A small keep-alive signal tells the connection to stay open
                     while the answer is being prepared.
@@ -386,13 +424,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="studio-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="studio-eli5"
-              aria-labelledby="studio-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="studio-eli5-title">
                   A helper that can read your team’s books.
                 </h4>
@@ -404,17 +441,24 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Give it knowledge</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Give it knowledge
+                  </dt>
                   <dd>Connect the documents the team needs.</dd>
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">02</span>Ask and follow along
+                    <span aria-hidden="true"> 02 </span>
+                    Ask and follow along
                   </dt>
                   <dd>Read the answer as it arrives.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Set the rules</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Set the rules
+                  </dt>
                   <dd>
                     The team controls access to model traffic and spending.
                   </dd>
@@ -422,20 +466,17 @@
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>In production in 3 months</strong
-                ><span>Internal AI platform delivery</span>
-              </div>
               <div class="tags">
-                <span>Amazon Bedrock</span><span>React</span
-                ><span>Streaming UX</span>
+                <span> Amazon Bedrock </span>
+                <span> React </span>
+                <span> Streaming UX </span>
               </div>
             </div>
           </article>
           <article
+            aria-labelledby="mission-title-workflow"
             class="mission"
             id="mission-workflow"
-            aria-labelledby="mission-title-workflow"
           >
             <div class="mission-intro">
               <div>
@@ -443,72 +484,81 @@
                 <h3 id="mission-title-workflow">
                   A workflow around the coding agent.
                 </h3>
+                <p>
+                  Planning, implementation, review, and QA with durable state
+                  and two human comprehension gates.
+                </p>
               </div>
-              <p>
-                Planning, implementation, review, and QA with durable state and
-                two human comprehension gates.
-              </p>
+              <div class="mission-result">
+                <strong> One workflow. Three coding tools. </strong>
+                <span> Claude Code · Codex CLI · Cursor </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/workflow-mobile.svg" />
+                  srcset="images/agents/workflow-mobile.svg"
+                />
                 <img
-                  src="images/agents/workflow.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="Plan, human plan comprehension gate, implement, human diff comprehension gate, independent review, and post-merge QA. Verified cases feed follow-up work; state lives in files and Git."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/workflow.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="workflow-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="workflow-engineering"
-              aria-labelledby="workflow-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="workflow-engineering-title">
                   A file-backed workflow across multiple coding tools.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/workflow-technical-mobile.svg" />
+                    srcset="images/agents/workflow-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/workflow-technical.svg"
-                    width="1202"
-                    height="412"
-                    loading="lazy"
-                    decoding="async"
                     alt="Plan, human plan comprehension gate, implement, human diff comprehension gate, independent review, and post-merge QA. Verified cases feed follow-up work; state lives in files and Git."
-                /></picture>
+                    decoding="async"
+                    height="411"
+                    loading="lazy"
+                    src="images/agents/workflow-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/workflow-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/workflow-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Context + state</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Context + state
+                  </dt>
                   <dd>
                     Each command runs in a clean context and loads task-relevant
                     material. Repository files and Git retain plans, progress,
@@ -516,7 +566,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Gates + review</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Gates + review
+                  </dt>
                   <dd>
                     Plan and diff comprehension gates are advisory by default
                     and can be enforced by configuration. Cross-model reviews
@@ -526,7 +579,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">03</span>Verification + recovery
+                    <span aria-hidden="true"> 03 </span>
+                    Verification + recovery
                   </dt>
                   <dd>
                     Small commits and saved progress let work resume without
@@ -538,13 +592,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="workflow-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="workflow-eli8"
-              aria-labelledby="workflow-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="workflow-eli8-title">
                   The memory lives outside the conversation.
                 </h4>
@@ -556,21 +609,30 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Two teaching gates</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Two teaching gates
+                  </dt>
                   <dd>
                     A person explains the plan before work starts and the actual
                     code changes afterward.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Independent review</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Independent review
+                  </dt>
                   <dd>
                     Different models review the plan and code, so the author
                     gets another perspective.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Close the loop</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Close the loop
+                  </dt>
                   <dd>
                     Post-merge QA produces evidence. Verified cases can become
                     follow-up automation work.
@@ -579,13 +641,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="workflow-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="workflow-eli5"
-              aria-labelledby="workflow-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="workflow-eli5-title">
                   Build with a plan, then show your work.
                 </h4>
@@ -597,15 +658,24 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Plan together</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Plan together
+                  </dt>
                   <dd>A person understands the plan before building starts.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Build in pieces</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Build in pieces
+                  </dt>
                   <dd>The agent saves its progress after each step.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Check together</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Check together
+                  </dt>
                   <dd>
                     People and other agents review the result and test it.
                   </dd>
@@ -613,20 +683,17 @@
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>One workflow. Three coding tools.</strong
-                ><span>Claude Code · Codex CLI · Cursor</span>
-              </div>
               <div class="tags">
-                <span>Context engineering</span><span>Cross-model review</span
-                ><span>Human gates</span>
+                <span> Context engineering </span>
+                <span> Cross-model review </span>
+                <span> Human gates </span>
               </div>
             </div>
           </article>
           <article
+            aria-labelledby="mission-title-runtime"
             class="mission"
             id="mission-runtime"
-            aria-labelledby="mission-title-runtime"
           >
             <div class="mission-intro">
               <div>
@@ -634,73 +701,80 @@
                 <h3 id="mission-title-runtime">
                   Autonomy inside explicit limits.
                 </h3>
+                <p>
+                  A typed runtime for model routing, tool execution, output
+                  validation, and cost controls.
+                </p>
               </div>
-              <p>
-                A typed runtime for model routing, tool execution, output
-                validation, and cost controls.
-              </p>
+              <div class="mission-result">
+                <strong> 144 evaluation runs </strong>
+                <span> To select the agent framework </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/runtime-mobile.svg" />
+                  srcset="images/agents/runtime-mobile.svg"
+                />
                 <img
-                  src="images/agents/runtime.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="Run request to budget gate and model call. Tool results return through the budget gate; final responses branch to schema validation. Host controls bound execution and record usage and redacted traces."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/runtime.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="runtime-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="runtime-engineering"
-              aria-labelledby="runtime-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="runtime-engineering-title">
                   Host policy around a bounded model–tool loop.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/runtime-technical-mobile.svg" />
+                    srcset="images/agents/runtime-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/runtime-technical.svg"
-                    width="1202"
-                    height="412"
-                    loading="lazy"
-                    decoding="async"
                     alt="Run request to budget gate and model call. Tool results return through the budget gate; final responses branch to schema validation. Host controls bound execution and record usage and redacted traces."
-                /></picture>
+                    decoding="async"
+                    height="411"
+                    loading="lazy"
+                    src="images/agents/runtime-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/runtime-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/runtime-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
                   <dt>
-                    <span aria-hidden="true">01</span>Contracts + isolation
+                    <span aria-hidden="true"> 01 </span>
+                    Contracts + isolation
                   </dt>
                   <dd>
                     An agent spec declares instructions, tools, output type,
@@ -711,7 +785,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Routing + execution</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Routing + execution
+                  </dt>
                   <dd>
                     Budget checks precede model calls. Provider failover handles
                     availability failures; schema failures can trigger
@@ -720,7 +797,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Evidence + replay</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Evidence + replay
+                  </dt>
                   <dd>
                     Per-call usage and redacted traces make runs inspectable.
                     Encrypted, tenant-scoped replay of completed runs was
@@ -732,13 +812,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="runtime-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="runtime-eli8"
-              aria-labelledby="runtime-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="runtime-eli8-title">
                   An agent is a loop, not one answer.
                 </h4>
@@ -750,14 +829,20 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Before a call</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Before a call
+                  </dt>
                   <dd>
                     Check the spending limit, choose a model, and apply the
                     app’s rules.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>During a run</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    During a run
+                  </dt>
                   <dd>
                     Use an allowed tool. Give its result back to the model,
                     checking the spending limit again first.
@@ -765,7 +850,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">03</span>When things go wrong
+                    <span aria-hidden="true"> 03 </span>
+                    When things go wrong
                   </dt>
                   <dd>
                     If a model is unavailable, try another. If an answer fails a
@@ -776,13 +862,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="runtime-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="runtime-eli5"
-              aria-labelledby="runtime-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="runtime-eli5-title">
                   A robot with a toolbox and an allowance.
                 </h4>
@@ -794,34 +879,40 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Choose a tool</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Choose a tool
+                  </dt>
                   <dd>Only the tools supplied for this job are available.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Check the allowance</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Check the allowance
+                  </dt>
                   <dd>Each model call has to pass the budget check.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Keep a receipt</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Keep a receipt
+                  </dt>
                   <dd>Record what ran and what it cost.</dd>
                 </div>
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>144 evaluation runs</strong
-                ><span>To select the agent framework</span>
-              </div>
               <div class="tags">
-                <span>Python / FastAPI</span><span>Typed tools</span
-                ><span>Budgets + traces</span>
+                <span> Python / FastAPI </span>
+                <span> Typed tools </span>
+                <span> Budgets + traces </span>
               </div>
             </div>
           </article>
           <article
+            aria-labelledby="mission-title-review"
             class="mission"
             id="mission-review"
-            aria-labelledby="mission-title-review"
           >
             <div class="mission-intro">
               <div>
@@ -829,72 +920,81 @@
                 <h3 id="mission-title-review">
                   Parallel checks. A human decision.
                 </h3>
+                <p>
+                  A five-agent health-content review workflow with 34 validation
+                  rules and an explicit human handoff.
+                </p>
               </div>
-              <p>
-                A five-agent health-content review workflow with 34 validation
-                rules and an explicit human handoff.
-              </p>
+              <div class="mission-result">
+                <strong> ~2 hours → &lt;10 minutes </strong>
+                <span> Article review time </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/review-mobile.svg" />
+                  srcset="images/agents/review-mobile.svg"
+                />
                 <img
-                  src="images/agents/review.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="Article routes through deterministic checks or parallel checking agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/review.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="review-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="review-engineering"
-              aria-labelledby="review-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="review-engineering-title">
                   Routed parallel validation with a human interrupt.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/review-technical-mobile.svg" />
+                    srcset="images/agents/review-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/review-technical.svg"
-                    width="1202"
-                    height="412"
-                    loading="lazy"
-                    decoding="async"
                     alt="Article routes through deterministic checks or parallel checking agents over A2A. Findings combine before a LangGraph human approval interrupt. Rules have a graph database and file fallback."
-                /></picture>
+                    decoding="async"
+                    height="411"
+                    loading="lazy"
+                    src="images/agents/review-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/review-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/review-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Orchestration</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Orchestration
+                  </dt>
                   <dd>
                     LangGraph routes work across a five-agent workflow.
                     Straightforward cases can clear without a model call.
@@ -903,7 +1003,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Rules + resilience</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Rules + resilience
+                  </dt>
                   <dd>
                     A loader supplies 34 validation rules from a graph database,
                     with a file fallback if the database is unavailable.
@@ -912,7 +1015,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">03</span>Evaluation + control
+                    <span aria-hidden="true"> 03 </span>
+                    Evaluation + control
                   </dt>
                   <dd>
                     RAGAS measured groundedness and coverage before rollout.
@@ -924,13 +1028,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="review-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="review-eli8"
-              aria-labelledby="review-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="review-eli8-title">
                   Fast rules first. Specialist agents when needed.
                 </h4>
@@ -942,18 +1045,27 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Route</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Route
+                  </dt>
                   <dd>Use fixed checks when they can settle a case.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Coordinate</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Coordinate
+                  </dt>
                   <dd>
                     Specialist agents work at the same time and send their
                     findings back.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Pause</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Pause
+                  </dt>
                   <dd>
                     The workflow waits for a person to review the findings
                     before passing them on.
@@ -962,13 +1074,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="review-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="review-eli5"
-              aria-labelledby="review-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="review-eli5-title">
                   A team of proofreaders with an editor in charge.
                 </h4>
@@ -980,35 +1091,40 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Share the work</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Share the work
+                  </dt>
                   <dd>Several helpers check the article at the same time.</dd>
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">02</span>Collect the findings
+                    <span aria-hidden="true"> 02 </span>
+                    Collect the findings
                   </dt>
                   <dd>Bring the checks into one review.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Ask a person</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Ask a person
+                  </dt>
                   <dd>The workflow waits for human review.</dd>
                 </div>
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>~2 hours → &lt;10 minutes</strong
-                ><span>Article review time</span>
-              </div>
               <div class="tags">
-                <span>LangGraph</span><span>A2A</span><span>RAGAS</span>
+                <span> LangGraph </span>
+                <span> A2A </span>
+                <span> RAGAS </span>
               </div>
             </div>
           </article>
           <article
+            aria-labelledby="mission-title-handshake"
             class="mission"
             id="mission-handshake"
-            aria-labelledby="mission-title-handshake"
           >
             <div class="mission-intro">
               <div>
@@ -1016,72 +1132,81 @@
                 <h3 id="mission-title-handshake">
                   Make the test as rigorous as the task.
                 </h3>
+                <p>
+                  I author hard coding tasks and compare agents with isolated
+                  environments, independent probes, and reproducible evidence.
+                </p>
               </div>
-              <p>
-                I author hard coding tasks and compare agents with isolated
-                environments, independent probes, and reproducible evidence.
-              </p>
+              <div class="mission-result">
+                <strong> Two complementary workstreams </strong>
+                <span> Task authoring + comparative evaluation </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/handshake-mobile.svg" />
+                  srcset="images/agents/handshake-mobile.svg"
+                />
                 <img
-                  src="images/agents/handshake.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="Two distinct workstreams: author a task and reference solution, attack the verifier, run model trials, and calibrate difficulty; or isolate agents, run the same staged task, probe both patches, and rank using evidence."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/handshake.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="handshake-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="handshake-engineering"
-              aria-labelledby="handshake-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="handshake-engineering-title">
                   Evaluation infrastructure and adversarial verification.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/handshake-technical-mobile.svg" />
+                    srcset="images/agents/handshake-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/handshake-technical.svg"
-                    width="1202"
-                    height="582"
-                    loading="lazy"
-                    decoding="async"
                     alt="Two distinct workstreams: author a task and reference solution, attack the verifier, run model trials, and calibrate difficulty; or isolate agents, run the same staged task, probe both patches, and rank using evidence."
-                /></picture>
+                    decoding="async"
+                    height="581"
+                    loading="lazy"
+                    src="images/agents/handshake-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/handshake-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/handshake-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Task authoring</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Task authoring
+                  </dt>
                   <dd>
                     A LangGraph toolkit models the authoring pipeline as a
                     resumable state machine with approval gates. Local checks
@@ -1091,7 +1216,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">02</span>Comparative evaluation
+                    <span aria-hidden="true"> 02 </span>
+                    Comparative evaluation
                   </dt>
                   <dd>
                     Two coding agents tackle one staged task in isolated Docker
@@ -1101,7 +1227,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Evidence + judgment</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Evidence + judgment
+                  </dt>
                   <dd>
                     Pair rankings cover correctness, behavior, and
                     communication, with cited turns, test results, and hashed
@@ -1112,13 +1241,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="handshake-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="handshake-eli8"
-              aria-labelledby="handshake-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="handshake-eli8-title">
                   Build hard tasks, then test agents carefully.
                 </h4>
@@ -1130,14 +1258,20 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Task authoring</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Task authoring
+                  </dt>
                   <dd>
                     Give the task an isolated workspace, a private checker, and
                     a known working solution. Try to fool the checker.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Comparative runs</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Comparative runs
+                  </dt>
                   <dd>
                     Give two agents the same staged task in isolated containers.
                     Compare code, behavior, and communication.
@@ -1145,7 +1279,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">03</span>Independent evidence
+                    <span aria-hidden="true"> 03 </span>
+                    Independent evidence
                   </dt>
                   <dd>
                     Rerun benchmarks and write extra probes to catch regressions
@@ -1155,13 +1290,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="handshake-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="handshake-eli5"
-              aria-labelledby="handshake-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="handshake-eli5-title">
                   Give two robots a fair challenge.
                 </h4>
@@ -1173,36 +1307,42 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Make it fair</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Make it fair
+                  </dt>
                   <dd>Start from the same task in separate workspaces.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Check the result</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Check the result
+                  </dt>
                   <dd>
                     Run tests instead of relying on a confident explanation.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Show why</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Show why
+                  </dt>
                   <dd>Point to evidence when comparing the work.</dd>
                 </div>
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>Two complementary workstreams</strong
-                ><span>Task authoring + comparative evaluation</span>
-              </div>
               <div class="tags">
-                <span>Docker</span><span>Hidden verifiers</span
-                ><span>Evidence-backed ranking</span>
+                <span> Docker </span>
+                <span> Hidden verifiers </span>
+                <span> Evidence-backed ranking </span>
               </div>
             </div>
           </article>
           <article
+            aria-labelledby="mission-title-evaluation"
             class="mission"
             id="mission-evaluation"
-            aria-labelledby="mission-title-evaluation"
           >
             <div class="mission-intro">
               <div>
@@ -1210,74 +1350,81 @@
                 <h3 id="mission-title-evaluation">
                   Turn a judgment into a defensible assessment.
                 </h3>
+                <p>
+                  I evaluate model-written documents and slide decks using
+                  calibrated rubrics, conformance checks, and independent
+                  critique.
+                </p>
               </div>
-              <p>
-                I evaluate model-written documents and slide decks using
-                calibrated rubrics, conformance checks, and independent
-                critique.
-              </p>
+              <div class="mission-result">
+                <strong> Hundreds of artifacts evaluated </strong>
+                <span> Business documents + slide decks </span>
+              </div>
             </div>
             <figure class="agent-map overview-map">
-              <picture
-                ><source
+              <picture>
+                <source
                   media="(max-width: 600px)"
-                  srcset="images/agents/evaluation-mobile.svg" />
+                  srcset="images/agents/evaluation-mobile.svg"
+                />
                 <img
-                  src="images/agents/evaluation.svg"
-                  width="1002"
-                  height="294"
-                  loading="lazy"
-                  decoding="async"
                   alt="My evaluation workflow: read the rubric, inspect outputs, draft an evidence-backed assessment with conformance checks, receive critique from two fresh-context AI judges, then finalize with human review."
-              /></picture>
-              <figcaption>
-                Workflow overview · simplified roles and handoffs
-              </figcaption>
+                  decoding="async"
+                  height="191"
+                  loading="lazy"
+                  src="images/agents/evaluation.svg"
+                  width="1001"
+                />
+              </picture>
+              <figcaption>Workflow · simplified</figcaption>
             </figure>
             <section
+              aria-labelledby="evaluation-engineering-title"
               class="depth-panel"
               data-depth="engineering"
               id="evaluation-engineering"
-              aria-labelledby="evaluation-engineering-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow"
-                  >Engineering / Architecture & tradeoffs</span
-                >
                 <h4 id="evaluation-engineering-title">
                   Rubric-based evaluation with an independent review layer.
                 </h4>
               </div>
               <figure class="agent-map technical-map">
-                <picture
-                  ><source
+                <picture>
+                  <source
                     media="(max-width: 600px)"
-                    srcset="images/agents/evaluation-technical-mobile.svg" />
+                    srcset="images/agents/evaluation-technical-mobile.svg"
+                  />
                   <img
-                    src="images/agents/evaluation-technical.svg"
-                    width="1202"
-                    height="302"
-                    loading="lazy"
-                    decoding="async"
                     alt="My evaluation workflow: read the rubric, inspect outputs, draft an evidence-backed assessment with conformance checks, receive critique from two fresh-context AI judges, then finalize with human review."
-                /></picture>
+                    decoding="async"
+                    height="301"
+                    loading="lazy"
+                    src="images/agents/evaluation-technical.svg"
+                    width="1201"
+                  />
+                </picture>
                 <figcaption>
-                  Selected architecture · simplified for this portfolio
+                  Architecture · simplified
                   <a
                     class="desktop-map-link"
                     href="images/agents/evaluation-technical.svg"
-                    >Full-size map ↗</a
-                  ><a
+                  >
+                    Full-size map ↗
+                  </a>
+                  <a
                     class="mobile-map-link"
                     href="images/agents/evaluation-technical-mobile.svg"
-                    >Full-size map ↗</a
                   >
+                    Full-size map ↗
+                  </a>
                 </figcaption>
               </figure>
               <dl class="explanation-grid">
                 <div>
                   <dt>
-                    <span aria-hidden="true">01</span>Calibrated assessment
+                    <span aria-hidden="true"> 01 </span>
+                    Calibrated assessment
                   </dt>
                   <dd>
                     I evaluated hundreds of model-written business documents and
@@ -1287,7 +1434,10 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Conformance checks</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Conformance checks
+                  </dt>
                   <dd>
                     I built checks around the rubric requirements to catch
                     omissions and inconsistencies in evaluation drafts before
@@ -1296,7 +1446,8 @@
                 </div>
                 <div>
                   <dt>
-                    <span aria-hidden="true">03</span>Fresh-context critique
+                    <span aria-hidden="true"> 03 </span>
+                    Fresh-context critique
                   </dt>
                   <dd>
                     Two independent AI judges review each draft in fresh
@@ -1308,13 +1459,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="evaluation-eli8-title"
               class="depth-panel"
               data-depth="eli8"
               id="evaluation-eli8"
-              aria-labelledby="evaluation-eli8-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI8 / How it works</span>
                 <h4 id="evaluation-eli8-title">
                   Quality has more than one dimension.
                 </h4>
@@ -1327,7 +1477,8 @@
               <dl class="explanation-grid">
                 <div>
                   <dt>
-                    <span aria-hidden="true">01</span>Inspect the artifact
+                    <span aria-hidden="true"> 01 </span>
+                    Inspect the artifact
                   </dt>
                   <dd>
                     Check the actual document or rendered deck, including the
@@ -1335,14 +1486,20 @@
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Apply the rubric</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Apply the rubric
+                  </dt>
                   <dd>
                     Tie findings to the evaluation criteria and write a concrete
                     rationale.
                   </dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Check my assessment</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Check my assessment
+                  </dt>
                   <dd>
                     Checks and two separate AI reviewers critique my explanation
                     before I make the final call.
@@ -1351,13 +1508,12 @@
               </dl>
             </section>
             <section
+              aria-labelledby="evaluation-eli5-title"
               class="depth-panel"
               data-depth="eli5"
               id="evaluation-eli5"
-              aria-labelledby="evaluation-eli5-title"
             >
               <div class="explanation-heading">
-                <span class="eyebrow">ELI5 / The simple version</span>
                 <h4 id="evaluation-eli5-title">
                   Check the homework—and the feedback.
                 </h4>
@@ -1369,15 +1525,24 @@
               </div>
               <dl class="explanation-grid">
                 <div>
-                  <dt><span aria-hidden="true">01</span>Read the rules</dt>
+                  <dt>
+                    <span aria-hidden="true"> 01 </span>
+                    Read the rules
+                  </dt>
                   <dd>Understand what a good result should do.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">02</span>Look closely</dt>
+                  <dt>
+                    <span aria-hidden="true"> 02 </span>
+                    Look closely
+                  </dt>
                   <dd>Read the writing and inspect the slides.</dd>
                 </div>
                 <div>
-                  <dt><span aria-hidden="true">03</span>Explain the score</dt>
+                  <dt>
+                    <span aria-hidden="true"> 03 </span>
+                    Explain the score
+                  </dt>
                   <dd>
                     Use examples from the work, then review the explanation.
                   </dd>
@@ -1385,27 +1550,25 @@
               </dl>
             </section>
             <div class="mission-footer">
-              <div class="mission-result">
-                <strong>Hundreds of artifacts evaluated</strong
-                ><span>Business documents + slide decks</span>
-              </div>
               <div class="tags">
-                <span>Rubric calibration</span><span>Independent AI judges</span
-                ><span>Human judgment</span>
+                <span> Rubric calibration </span>
+                <span> Independent AI judges </span>
+                <span> Human judgment </span>
               </div>
             </div>
           </article>
         </div>
         <div class="agent-postscript">
           <p>
-            <strong>From experiments to production.</strong> I also build
-            research agents and multi-agent simulations.
+            <strong> From experiments to production. </strong>
+            I also build research agents and multi-agent simulations.
           </p>
-          <a class="text-link" href="https://huggingface.co/fareezaiahmed"
-            >Explore my AI experiments ↗</a
-          >
+          <a class="text-link" href="https://huggingface.co/fareezaiahmed">
+            Explore my AI experiments ↗
+          </a>
         </div>
       </section>
+
       <section
         class="section wrap showcase"
         id="interfaces"
